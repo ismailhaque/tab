@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+*::before, ::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.ismail-tab{
+    width: 100%;
+    height: auto;
+    margin: 200px auto 0;
+    width: 600px;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+}
+.ismail-tab .tab-menu{
+    height: auto;
+    padding: 20px 30px;
+}
+.ismail-tab .tab-menu ul{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.ismail-tab .tab-menu ul li a{
+ color: #000;
+ background: rgb(255, 255, 255);
+ padding: 10px 20px;
+ border-radius: 5px 5px 0 0;
+ border-bottom: 1px solid #ccc;
+}
+.ismail-tab .tab-pane .contant {
+    display: none;
+    padding: 10px 30px;
+}
+.ismail-tab .tab-menu ul li a.active{
+    border-bottom: none;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.ismail-tab .tab-pane .contant.active{
+    display: block;
+}
